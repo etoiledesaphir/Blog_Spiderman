@@ -1,0 +1,59 @@
+/*Réglages Généraux*/
+
+
+
+* {
+    --couleur-blanche:#e2e2e2;
+    --couleur-grise:#3f3f3f;
+    --couleur-rouge1:#de0606;
+    --couleur-rouge2:#ac0202;
+    --couleur-bleue:#007fd7;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+
+}
+
+@font-face {
+    font-family: "police";
+    src: url(./NexaHeavy.ttf);
+}
+
+
+
+
+/*Réglages Nav*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Réglages Header*/
+
+
+
+
+
+
+
+
+
+
+/*Réglages Main*/
+
+
+
+
+
+
