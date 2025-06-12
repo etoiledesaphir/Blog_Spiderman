@@ -13,8 +13,6 @@
     padding: 0;
     box-sizing: border-box;
 
-
-
 }
 
 @font-face {
@@ -27,8 +25,54 @@
 
 /*Réglages Nav*/
 
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--couleur-rouge1);
+    border: solid var(--couleur-rouge2) 4px;
+}
+
+#logo {
+    width: 5vw;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    
+    font-size: 2rem;
+
+}
+
+.navbutton {
+    display: block;
+    text-align: center;
+    
+    padding: 5px;
+    margin: 5px;
+
+    width: 10vw;
+    height: 6vh;
+
+    background-color: var(--couleur-bleue);
+    
+    border: solid var(--couleur-grise) 3px;
+    border-radius: 15px;
+    
+    
+    text-decoration: none;
 
 
+}
+
+
+h1 {
+    font-family: "police";
+}
 
 
 
@@ -42,7 +86,9 @@
 /*Réglages Header*/
 
 
-
+p {
+    font-size: 30px;
+}
 
 
 
