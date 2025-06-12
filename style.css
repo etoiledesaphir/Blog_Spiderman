@@ -1,8 +1,9 @@
 * {
-    --couleur-blanche:#ffffff;
-    --couleur-rouge:#ff0000;
-    --couleur-bleue:#2323f5 ;
-
+    --couleur-gris: #3f3f3f;
+    --couleur-rouge:#de0606;
+    --couleur-bleue:#007fd7;
+    --couleur-rouge-foncé:#ac0202;
+    --couleur-blanc:#e2e2e2;
 
 
 
@@ -11,6 +12,15 @@
 
 
 @font-face {
-    font-family: "Titre";
-    src: url();
+    font-family: "Daily bugle";
+    src: url("./SRC/NexaHeavy\(2\).ttf");
 }
+
+
+/*Réglage nav*/
+
+
+/*Réglage header*/
+
+
+/*Réglage main*/
