@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    
+    --couleur-gris:#e2e2e2;
+    --couleur-rouge-claire:#de0606;
+    --couleur-bleue:#007fd7 ;
+    --couleur-rouge-fonce:#ac0202;
+    --couleur-noire:#3f3f3f;
+
+}
+
+@font-face {
+    font-family: "police";
+    src: url("asset/NexaHeavy.ttf");
+}
+
+/*Réglages nav*/
+
+
+
+
+/*Réglages header*/
+
+
+
+/* Réglages main*/
+
+
+/*Réglages body*/
+
+body {
+    font-family: "police";
+}
