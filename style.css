@@ -1,51 +1,303 @@
-* {
-    --couleur-blanche:#e2e2e2;
-    --couleur-rouge:#de0606;
-    --couleur-bleue:#007fd7;
-    --couleur-rouge-foncé:#ac0202;
-    --couleur-grise:#3f3f3f;
-
-
-
-
-}
-
-
-
+/*Réglages généraux*/
 @font-face {
     font-family: "Daily Bugle";
-    src: url("./src/NexaHeavy.ttf");
+    src: url("./SRC/NexaHeavy.ttf");
 }
 
-/*réglage nav*/
+@font-face {
+    font-family: "base";
+    src: url("./CaviarDreams.ttf");
+}
+
+* {
+    /*Supprimer toutes les marges par défauts pour ne pas être embété*/
+    margin: 0;
+    padding : 0;
+    box-sizing: border-box;
+
+    /*palette de couleur*/
+    --couleur-blanc:#e2e2e2;
+    --couleur-bleuclaire:#007fd7;
+    --couleur-gris:#3f3f3f;
+    --couleur-rougeclaire:#de0606;
+    --couleur-rougefonce:#ac0202;
 
 
-/*réglage header*/
-header{
-position: relative;
-    top: 15vmin;
-    background:;
-    color:var(--couleur-blanche);
+    /*palette alternative
+    --couleur-blanc: #e2e2e2;
+    --couleur-bleuclaire: #007fd7;;
+    --couleur-gris: #3f3f3f;
+    --couleur-rougeclaire: #de0606;
+    --couleur-rougefonce:#ac0202;
+    */
+
+}
+
+body {
+    font-family: "base";
+    background-color: var(--couleur-blanc);
+    color:var(--couleur-rougefonce);
+}
+
+/*réglage de la partie nav */
+#logo {
+    width : 7%;
+    display: block;
+}
+/*réglage de la partie header */
+header {
+    position: relative;
+    top: 10vmin;
+    background:radial-gradient(circle at 25%, var(--couleur-midfonce),var(--couleur-fonce));
+    color:var(--couleur-bleuclaire);
     height: 25vh;
     padding : 20px;
 
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content:space-evenly;
     align-items:center;
+
 }
 
-h1{
-font-family: "Daily Bugle";
-font-size: 4rem;
+h1 {
+    font-family: "Daily Bugle";
+    font-size: 4rem;
 }
-h2{
-    margin-bottom: 5px;
-}
-h3{
+
+h3 {
     font-size: 1.5rem;
 }
+h2{
+margin-bottom: 5px;
+}
+
+nav {
+    position: fixed;
+    height: 10vmin;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    border-bottom: solid var(--couleur-rougefonce) 1px;
+
+    width: 100vw;
+    background-color: var(--couleur-blanc);
+    z-index: 10;
+}
+
+#nav-bar {
+    width : 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    padding: 5px;
+}
 
 
+.nav-button {
+    font-size: 1.5rem;
+    text-decoration: none;
+    display: block;
 
-/*réglage main*/
+    background-color: var(--couleur-rougefonce);
+    color: var(--couleur-blanc);
+    padding: 5px;
+
+    width : 15%;
+    margin : 5px;
+
+    text-align: center;
+    border-radius: 5px;position: background-color 500ms, color 1000ms, border 1000ms;
+
+}
+
+.nav-button:hover {
+    background-color: var(--couleur-rougeclaire);
+    color: var(--couleur-gris);
+    border: solid var(--couleur-gris) 2px;
+}
+
+/*réglage de la partie main et aside*/
+p{
+font-size: 1.5rem;
+margin-bottom: 5px;
+}
+
+
+#rangement {
+    position: relative;
+    top: 10vmin;
+    width : 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    padding: 20px;
+}
+
+main {
+    width: 85%;
+}
+
+article {
+    box-shadow: var(--couleur-rougefonce) 2px 2px 5px 0;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: transform 1000ms;
+}
+article:hover{
+    transform: translate3d(2vh, 2vh, 0)
+}
+/*réglage article 1*/
+#text1-contenant{
+display: flex;
+flex-direction: row-reverse;
+justify-content: space-between;
+align-items: stretch;
+}
+
+#text1 {
+width: 40%;
+}
+
+iframe{
+    display: block;
+    width: 40%;
+    border-radius: 20px;
+}
+
+aside {
+    position: fixed;
+    top: 10vmin;
+    width : 15%;
+    right: 10px;
+
+}
+
+/*image et video */
+
+#spiderman1 {
+    max-width: 100%;    
+}
+
+#spiderman2{
+    max-width: 100%;
+    float: right;
+    width: 25%;
+}
+
+#spiderman3 {
+    max-width: 100%;
+    margin-top: 15px;
+}
+
+#Spider-Man:Into The Spider-Verse (2018) {
+    max-width: 100%;
+}
+
+aside>article{
+    padding: 15px;
+    background-color: var(--couleur-rougefonce);
+    color: var(--couleur-blanc);
+    border: solid var(--couleur-bleuclaire);
+    border-radius: 15px;
+}
+/*design fou fou*/
+
+
+.intertext{
+    width: 100%;
+    aspect-ratio: 1904/640;
+    background-image: url(../Blog_Spiderman/assets/Sans\ titre.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position-y: 20vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+.intertext2{
+     width: 100%;
+     aspect-ratio: 1904/640;
+    background-image: url(../Blog_Spiderman/assets/spiderman.jpeg);
+     background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position-y: 20vh;
+}
+h4{
+    font-size: 4rem;
+    font-family: "Daily Bugle";
+    color: var(--couleur-midclaire);
+    margin-right: 30px;
+}
+
+/* la page game.htm*/
+#main-game {
+position: relative;
+    top: 10vmin;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+    width: 100%;
+    padding: 25px;
+
+    font-size: 1.3rem;
+}
+#user-interface{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#user-number{
+ font-size: 1.3rem;
+ width: 15vw;
+ padding: 5px;
+ border-radius: 10px;
+background-color: var(--couleur-fonce);
+}
+
+#user-number:focus{
+background-color: var(--couleur-fonce);
+color: var(--couleur-midclaire);
+
+}
+
+#send-buttom{
+display: block;
+font-size: 1.3rem;
+padding: 5px;
+margin-left: 20px;
+
+background-color: var(--couleur-fonce);
+border-radius: 10px;
+
+box-shadow: var(--couleur-claire)3px 3 px 5px 0;
+transition: box-shadow 250ms, background-color 250ms;
+
+}
+
+#send-buttom:hover{
+background-color: var(--couleur-claire);
+box-shadow: 0 0 0 0;
+
+}
+
+.result-line{
+    font-family: "police-titre";
+    border: var(--couleur-fonce) solid 2px;
+    border-radius: 5px;
+    font-size: 1.8rem;
+    margin: 10px;
+}
