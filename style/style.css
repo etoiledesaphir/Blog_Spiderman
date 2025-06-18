@@ -1,31 +1,61 @@
-/*Réglages Généraux*/
-
-
-
-* {
-    --couleur-blanche:#e2e2e2;
-    --couleur-grise:#3f3f3f;
-    --couleur-rouge1:#de0606;
-    --couleur-rouge2:#ac0202;
-    --couleur-bleue:#007fd7;
+* {--couleur-blanche:#e2e2e2;--couleur-grise:#3f3f3f;--couleur-rouge1:#de0606;--couleur-rouge2:#ac0202;--couleur-bleue:#007fd7;
 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
-
-
 }
 
 @font-face {
     font-family: "police";
-    src: url(./NexaHeavy.ttf);
+    src: url(../style/NexaHeavy.ttf);
 }
 
 
 
 
-/*Réglages Nav*/
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 10vh;
+    width: 100vw;
+
+    background-color: var(--couleur-rouge1);
+    border: solid var(--couleur-rouge2) 4px;
+}
+
+#logo {
+    width: 5vw;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+
+    font-size: 2rem;
+}
+
+
+h1 {
+    font-family: "police";
+    margin-left: 0vw;
+}
+
+
+
+
+
+
+p {
+    font-size: 30px;
+}
 
 
 
@@ -33,24 +63,41 @@
 
 
 
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    padding-right: 35px;
+
+    width: 15vw;
+    height: 100vh;
+
+    font-size: 1.5rem;
+    color: #0987fc;
+    text-decoration: none;
+
+    background-color: var(--couleur-rouge1);
+    
+
+}
+
+#ki {
+    color: #0987fc;
+    text-decoration: none;
+}
 
 
+#liste {
+    display: block;
+    flex-direction: row;
+}
+
+ul{
+    margin: 3vw;
+}
 
 
-
-
-/*Réglages Header*/
-
-
-
-
-
-
-
-
-
-
-/*Réglages Main*/
 
 
 
