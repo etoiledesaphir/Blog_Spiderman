@@ -1,19 +1,16 @@
-/*Réglages Généraux*/
 
 
 
-* {
-    --couleur-blanche:#e2e2e2;
-    --couleur-grise:#3f3f3f;
-    --couleur-rouge1:#de0606;
-    --couleur-rouge2:#ac0202;
-    --couleur-bleue:#007fd7;
+
+   * {--couleur-blanche:#e2e2e2;
+        --couleur-grise:#3f3f3f;
+        --couleur-rouge1:#de0606;
+        --couleur-rouge2:#ac0202;
+        --couleur-bleue:#007fd7;
 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-
 
 }
 
@@ -25,13 +22,177 @@
 
 
 
-/*Réglages Nav*/
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 10vh;
+    width: 100vw;
+
+    background-color: var(--couleur-rouge1);
+    border: solid var(--couleur-rouge2) 4px;
+}
+
+#logo {
+    width: 5vw;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+
+    font-size: 2rem;
+}
+
+
+
+
+.navbutton {
+    display: block;
+    text-align: center;
+
+    padding: 5px;
+    margin-right: 20px;
+
+    width: 10vw;
+    height: 6vh;
+
+    background-color: var(--couleur-bleue);
+
+    border: solid var(--couleur-grise) 3px;
+    border-radius: 15px;
+
+
+    text-decoration: none;
+    color: black;
+
+    transition: 500ms;
+}
+
+.navbutton:hover {
+    background-color: #9293ff;
+    scale: 1.05;
+}
+
+
+h1 {
+    font-family: "police";
+    margin-left: 18vw;
+}
 
 
 
 
 
 
+p {
+    font-size: 20px;
+}
+
+
+
+aside {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+    padding-right: 35px;
+
+    width: 30vw;
+    height: 100vh;
+
+    font-size: 1.5rem;
+    color: #0987fc;
+    text-decoration: none;
+
+    background-color: var(--couleur-grise);
+
+}
+
+#ki {
+    color: #0987fc;
+    text-decoration: none;
+}
+
+
+#liste {
+    display: block;
+    flex-direction: row;
+}
+
+
+
+main {
+
+font-family: "police";
+font-size: 1rem;
+margin: 10px;
+
+}
+
+
+h2 {
+
+font-size: 2rem;
+
+
+}
+
+#text1 {
+
+
+
+padding-right: 20px;
+
+
+display: block;
+width: 40%;
+border-radius: 15px;
+
+
+}
+
+#rangement {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: start;
+
+}
+
+#articledujour {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px;
+    margin: 40px;
+    width: 40%;
+    border: solid var(--couleur-rouge1) ;
+    border-radius: 40px;
+
+
+}
+
+#presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 40px;
+    padding: 40px;
+    width: 40%;
+    border: solid var(--couleur-rouge1) ;
+    border-radius: 40px;
+
+}
 
 
 
