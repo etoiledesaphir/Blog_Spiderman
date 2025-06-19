@@ -129,7 +129,7 @@ margin-bottom: 5px;
 #rangement {
     position: relative;
     top: 10vmin;
-    width : 100vw;
+    width : 90vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -186,14 +186,19 @@ aside {
     max-width: 100%;
     float: right;
     width: 25%;
+    
+    
 }
 
 #spiderman3 {
     max-width: 100%;
     margin-top: 15px;
+    width: 25%;
+    margin-bottom: 20px;
+   
 }
 
-#Spider-Man:Into The Spider-Verse (2018) {
+#Spider-Man {
     max-width: 100%;
 }
 
