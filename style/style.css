@@ -43,6 +43,10 @@ nav {
     width: 5vw;
 }
 
+nav>h1 {
+    margin-right: 5vw;
+}
+
 #navbar {
     display: flex;
     flex-direction: row;
@@ -60,8 +64,6 @@ nav {
     display: block;
     text-align: center;
     
-    padding: 5px;
-    margin-right: 20px;
 
     width: 10vw;
     height: 6vh;
@@ -86,7 +88,7 @@ nav {
 
 h1 {
     font-family: "police";
-    margin-left: 18vw;
+
 }
 
 
@@ -115,16 +117,18 @@ aside {
     
     /*padding-right: 35px;*/
     
-    width: 15vw;
-    height: 100vh;
+    width: 15%;
+    height: 200vh;
 
     font-size: 20px;
     color: #0987fc;
     text-decoration: none;
 
     background-color: var(--couleur-grise);
-    
+
 }
+
+
 
 
 #ki {
@@ -134,11 +138,14 @@ aside {
     align-items: start;
     text-decoration: none;
     color: #0987fc;    
+
+    margin-right: 50px;
 }
 
 #liste {
     display: flex;
     flex-direction: column;
+    padding-left: 40px;
 }
 
 a {
@@ -153,28 +160,58 @@ a {
 /*Réglages Main*/
 
 
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+}
+
 
 #rangement {
     
     height: auto;
-    width: 80vw;
     display: flex;
     flex-direction: row;
     justify-content: start;
     align-items: start;
 
+}
+
+
+#articlejour {
+    margin: 40px;
+    padding: 8px;
     
-
-
-}
-
-
-main {
-    margin: 20px;
     border: solid var(--couleur-rouge1) 2px;
+    border-radius: 20px;
     box-shadow: var(--couleur-rouge2) 2px 2px 2px 0;
+    width: 40%;
 
+    text-align: center;
 }
+
+
+h3 {
+    margin: 8px;
+    text-align: center;
+    color: var(--couleur-rouge1);
+    background-color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+
+#presentation {
+    border: solid var(--couleur-rouge1) 2px;
+    border-radius: 20px;
+    box-shadow: var(--couleur-rouge2) 2px 2px 2px 0;
+    width: 35%;
+
+    margin: 40px;
+    padding: 8px;
+}
+
+
 
 
 
