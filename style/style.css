@@ -68,16 +68,17 @@ aside {
     flex-direction: column;
     justify-content: space-around;
     align-items: start;
-    padding-right: 35px;
+    padding-right: 0px; 
+    font-family: "police";
 
     width: 15vw;
     height: 100vh;
 
-    font-size: 1.5rem;
+    font-size: 1.5rem; 
     color: #0987fc;
     text-decoration: none;
 
-    background-color: var(--couleur-rouge1);
+    background-color: var(--couleur-grise); 
     
 
 }
@@ -94,7 +95,7 @@ aside {
 }
 
 ul{
-    margin: 3vw;
+    margin: 2vw;
 }
 
 
