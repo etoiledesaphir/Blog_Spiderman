@@ -1,6 +1,6 @@
 /*Réglages généraux*/
 @font-face {
-    font-family: "Daily Bugle";
+    font-family: "Black Panther";
     src: url("./SRC/NexaHeavy.ttf");
 }
 
@@ -16,27 +16,27 @@
     box-sizing: border-box;
 
     /*palette de couleur*/
-    --couleur-blanc:#e2e2e2;
-    --couleur-bleuclaire:#007fd7;
-    --couleur-gris:#3f3f3f;
-    --couleur-rougeclaire:#de0606;
-    --couleur-rougefonce:#ac0202;
+    --couleur-blanc:#ffffff;
+    --couleur-violet:#7c3ca1;
+    --couleur-grisclaire:#7c7c7c;
+    --couleur-grisfonce:#2d2d2d;
+    --couleur-noir:#000000;
 
 
     /*palette alternative
-    --couleur-blanc: #e2e2e2;
-    --couleur-bleuclaire: #007fd7;;
-    --couleur-gris: #3f3f3f;
-    --couleur-rougeclaire: #de0606;
-    --couleur-rougefonce:#ac0202;
+    --couleur-blanc: #ffffff;
+    --couleur-violet: #7c3ca1;
+    --couleur-grisclaire: #7c7c7c;
+    --couleur-grisfonce: #2d2d2d;
+    --couleur-noir:#000000;
     */
 
 }
 
 body {
     font-family: "base";
-    background-color: var(--couleur-blanc);
-    color:var(--couleur-rougefonce);
+    background-color: var(--couleur-grisfonce);
+    color:var(--couleur-violet);
 }
 
 /*réglage de la partie nav */
@@ -49,7 +49,7 @@ header {
     position: relative;
     top: 10vmin;
     background:radial-gradient(circle at 25%, var(--couleur-midfonce),var(--couleur-fonce));
-    color:var(--couleur-bleuclaire);
+    color:var(--couleur-grisclaire);
     height: 25vh;
     padding : 20px;
 
@@ -79,7 +79,7 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items:center;
-    border-bottom: solid var(--couleur-rougefonce) 1px;
+    border-bottom: solid var(--couleur-violet) 1px;
 
     width: 100vw;
     background-color: var(--couleur-blanc);
@@ -101,7 +101,7 @@ nav {
     text-decoration: none;
     display: block;
 
-    background-color: var(--couleur-rougefonce);
+    background-color: var(--couleur-grisfonce);
     color: var(--couleur-blanc);
     padding: 5px;
 
@@ -114,9 +114,9 @@ nav {
 }
 
 .nav-button:hover {
-    background-color: var(--couleur-rougeclaire);
-    color: var(--couleur-gris);
-    border: solid var(--couleur-gris) 2px;
+    background-color: var(--couleur-grisclaire);
+    color: var(--couleur-grisclaire);
+    border: solid var(--couleur-violet) 2px;
 }
 
 /*réglage de la partie main et aside*/
@@ -142,7 +142,7 @@ main {
 }
 
 article {
-    box-shadow: var(--couleur-rougefonce) 2px 2px 5px 0;
+    box-shadow: var(--couleur-grisfonce) 2px 2px 5px 0;
     padding: 10px;
     margin-bottom: 10px;
     transition: transform 1000ms;
@@ -178,37 +178,11 @@ aside {
 
 /*image et video */
 
-#spiderman1 {
+#Black Panther{
     max-width: 100%;    
 }
 
-#spiderman2{
-    max-width: 100%;
-    float: right;
-    width: 25%;
-    
-    
-}
 
-#spiderman3 {
-    max-width: 100%;
-    margin-top: 15px;
-    width: 25%;
-    margin-bottom: 20px;
-   
-}
-
-#Spider-Man {
-    max-width: 100%;
-}
-
-aside>article{
-    padding: 15px;
-    background-color: var(--couleur-rougefonce);
-    color: var(--couleur-blanc);
-    border: solid var(--couleur-bleuclaire);
-    border-radius: 15px;
-}
 /*design fou fou*/
 
 
@@ -285,23 +259,23 @@ font-size: 1.3rem;
 padding: 5px;
 margin-left: 20px;
 
-background-color: var(--couleur-fonce);
+background-color: var(--couleur-grisfonce);
 border-radius: 10px;
 
-box-shadow: var(--couleur-claire)3px 3 px 5px 0;
+box-shadow: var(--couleur-grisclaire)3px 3 px 5px 0;
 transition: box-shadow 250ms, background-color 250ms;
 
 }
 
 #send-buttom:hover{
-background-color: var(--couleur-claire);
+background-color: var(--couleur-rgisclaire);
 box-shadow: 0 0 0 0;
 
 }
 
 .result-line{
     font-family: "police-titre";
-    border: var(--couleur-fonce) solid 2px;
+    border: var(--couleur-grisfonce) solid 2px;
     border-radius: 5px;
     font-size: 1.8rem;
     margin: 10px;
